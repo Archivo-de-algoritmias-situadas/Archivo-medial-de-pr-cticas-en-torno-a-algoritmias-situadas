@@ -1,8 +1,3 @@
-
-
-
-
-
 // Gui
 // variables globales
 
@@ -20,13 +15,10 @@
 ~markP = [];
 ~markD = [];
 
-
 // cargar sonidos:
 "syndefs.scd".loadRelative;
 
-
 // detectores
-
 SynthDef(\detectaAmps, {|in = 0, umbral = 0.5|
 	var inp, onsets, chain, amp, pich, hasPich;
 	inp = SoundIn.ar(in);
@@ -50,9 +42,7 @@ SynthDef(\detectaAtaque, {|in = 0, umbral = 0.5|
 }).add;
 
 
-
 // función de inicialización
-
 ~init = {
 	~altura = 440;
 
@@ -112,8 +102,6 @@ c.decorator.shift(320, 0);
 	}
 };
 
-
-
 c.decorator.shift(-260, -100);
 ~bt[4] = Button(c, 100@50).states_([
 	["canon", Color.black, Color.green(0.7, 0.9)],
@@ -158,6 +146,3 @@ c.decorator.shift(-260, -52);
 	~patrones[~capa] = ~playerActual;
 
 };
-
-
-
