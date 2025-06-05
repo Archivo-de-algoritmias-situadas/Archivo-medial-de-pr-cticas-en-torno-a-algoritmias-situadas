@@ -84,8 +84,6 @@ c.decorator.shift(320, 0);
 ~bt[3] = Button(c, 150@50).states_([["stop", Color.black, Color.cyan(0.4, 0.8)]]).font_(~font);
 ~bt[3].action = { ~patrones[~capa].stop};
 	//~playerActual.stop
-
-
 ~bt[0].action = {|b|
 	if (b.value == 1) {
 		\comienza.postln;
