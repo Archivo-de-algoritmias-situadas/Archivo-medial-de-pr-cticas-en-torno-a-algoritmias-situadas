@@ -142,5 +142,6 @@ c.decorator.shift(-260, -52);
 	~playerActual = ~uno.play(quant:1);
 	~patrones[~capa].stop;
 	~patrones[~capa] = ~playerActual;
+	"feliz fin de semana".postln;
 
 };
